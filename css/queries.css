@@ -1,0 +1,198 @@
+/* breakpoints from device width : 0 - 480 - 768 - 1024 - 1200 px */
+
+
+/* after setting BP with MQ, reduce window to smaller size and fix whats broken */
+
+
+/* ...resolve/reduce weirdness */
+
+
+/* Big tablet to width smaller than the row px of 100%: from 1024 to 1200 : width for ipad in landscape mode */
+
+
+/* 1st, reduce screen to the lowest width:  1024/1023 */
+
+@media only screen and (max-width: 1200px) {
+    .banner {
+    height: 20vh;
+}
+    
+    
+    img {
+    width: 150px;
+    height: 150px;
+    left: 43%;
+}
+    
+    h1 {
+    font-size: 180%;
+    margin-bottom: 15px;
+
+}
+    
+    h2 {
+    font-size: 160%;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+}
+
+
+/* minify: font size */
+
+
+/* small tablet to big tablets: from 768/767 to 1023px : width for ipad in portrait mode */
+
+
+/* 1st, reduce screen to the lowest width:  768 */
+
+@media only screen and (max-width: 1023px) {
+    /* only change the base font, as all other fonts was defined other font in percentages. */
+    /* Hence, all other font (in %) will automatically decrease */
+    body {
+        font-size: 18px;
+    }
+    /* reduce white-space */
+    section {
+        padding: 60px 0;
+    }
+    /* add horizontal padding/white-space*/
+    .row {
+        padding: 0 2%;
+    } 
+    
+    .banner {
+    height: 15vh;
+}
+        .title {
+    margin-top: 70px;
+}
+    
+    img {
+    width: 130px;
+    height: 130px;
+        top: 25%;
+    left: 41%;
+}
+
+    h1 {
+    font-size: 160%;
+    margin-bottom: 10px;
+
+}
+    
+    h2 {
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+    
+    h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+}
+
+
+/* change styles & layout: columns to stack/rows */
+
+
+/* small phones to small tablets: from 481 to 767px : width for ipad */
+
+
+/* 1st, reduce screen to the lowest width: 481/480 */
+
+ @media only screen and (max-width: 767px) {
+    /* only change the base font, as all other fonts was defined other font in percentages. */
+    /* Hence, all other font (in %) will automatically decrease */
+    body {
+        font-size: 16px;
+    }
+    /* reduce vertical white-space */
+    section {
+        padding: 30px 0;
+    }
+     add horizontal padding
+    .row {
+        padding: 0 4%;
+    } 
+     
+     /* Remove Middle Grey Line */
+.right {
+    border-left: none;
+}
+     
+     /*   not working yet:  turn column to stack */
+    .column {
+        width: 100%;
+    }
+  
+    /* .long-copy {
+        /* remove padding */
+    /*    width: 100%;
+        /* center the paragraphs */
+    /*    margin-left: 0%;
+    }
+    h1 {
+        font-size: 140%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        margin-right: 15px;
+        font-size: 120%;
+    }
+    .works-step:last-of-type {
+        margin-bottom: 30px;
+    }
+    /* image */
+   /* .steps-box:first-child {
+        text-align: center;
+    }
+    /* actual image */
+   /* .website-screen {
+        width: 50%;
+    }
+    /* fix first column */
+    /* from script file columnmargin */
+    /* .col {
+        display: block;
+        float:left;
+        margin: 1% 0 1% 1.6%;
+    } */
+    /*.col {
+        margin: 0% 0 4% 0%;
+    } */
+} 
+
+
+/* minify */
+
+
+/* 1st, reduce screen to the lowest width:  */
+
+
+/* small phones: from 0 to 480px : width for old iphones, iphone5 etc*/
+
+/* @media only screen and (max-width: 480px) {
+    /* reduce padding btn sections */
+    /* reduce vertical white-space */
+    section {
+        padding: 20px 0;
+    }
+    .section-form {
+        /* add % of the parent container */
+        width: 90%;
+    }
+} */

@@ -5,12 +5,21 @@
 
 
 /* ...resolve/reduce weirdness */
-
+@media only screen and (max-width: 2600px) {
+       img {
+    width: 160px;
+    height: 160px;
+        top: 50%;
+    left: 41%;
+}
+}
 
 /* Big tablet to width smaller than the row px of 100%: from 1024 to 1200 : width for ipad in landscape mode */
 
 
 /* 1st, reduce screen to the lowest width:  1024/1023 */
+
+
 
 @media only screen and (max-width: 1200px) {
     .banner {
@@ -21,9 +30,10 @@
     img {
     width: 150px;
     height: 150px;
+    top: 38%;
     left: 43%;
 }
-    
+
     h1 {
     font-size: 180%;
     margin-bottom: 15px;
@@ -31,7 +41,7 @@
 }
     
     h2 {
-    font-size: 160%;
+    font-size: 140%;
     margin-bottom: 25px;
 }
 
@@ -39,7 +49,9 @@ h3 {
     margin-top: 15px;
     margin-bottom: 10px;
 
-}
+}    
+    
+/*    remove sticky class using javascript*/
 
 }
 
@@ -60,7 +72,9 @@ h3 {
     }
     /* reduce white-space */
     section {
-        padding: 60px 0;
+        padding: 10px 0;
+            width: 92%;
+    margin-left:4%;
     }
     /* add horizontal padding/white-space*/
     .row {
@@ -75,8 +89,8 @@ h3 {
 }
     
     img {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
         top: 25%;
     left: 41%;
 }
@@ -88,7 +102,7 @@ h3 {
 }
     
     h2 {
-    font-size: 150%;
+    font-size: 130%;
     margin-bottom: 20px;
 }
     
@@ -97,9 +111,8 @@ h3 {
     margin-bottom: 5px;
 
 }
-
-}
-
+  
+    }
 
 /* change styles & layout: columns to stack/rows */
 
@@ -117,22 +130,23 @@ h3 {
     }
     /* reduce vertical white-space */
     section {
-        padding: 30px 0;
+        padding: 10px 0;
+            width: 96%;
+    margin-left:2%;
+
     }
      add horizontal padding
     .row {
         padding: 0 4%;
     } 
      
-     /* Remove Middle Grey Line */
-.right {
-    border-left: none;
+   img {
+    width: 110px;
+    height: 110px;
+        top: 25%;
+    left: 41%;
 }
-     
-     /*   not working yet:  turn column to stack */
-    .column {
-        width: 100%;
-    }
+   
   
     /* .long-copy {
         /* remove padding */
@@ -146,34 +160,10 @@ h3 {
     h2 {
         font-size: 150%;
     }
-    .works-step div {
-        height: 40px;
-        width: 40px;
-        padding: 4px;
-        margin-right: 15px;
-        font-size: 120%;
-    }
-    .works-step:last-of-type {
-        margin-bottom: 30px;
-    }
-    /* image */
-   /* .steps-box:first-child {
-        text-align: center;
-    }
-    /* actual image */
-   /* .website-screen {
-        width: 50%;
-    }
-    /* fix first column */
-    /* from script file columnmargin */
-    /* .col {
-        display: block;
-        float:left;
-        margin: 1% 0 1% 1.6%;
-    } */
-    /*.col {
-        margin: 0% 0 4% 0%;
-    } */
+
+/*
+    
+*/
 } 
 
 
@@ -185,14 +175,13 @@ h3 {
 
 /* small phones: from 0 to 480px : width for old iphones, iphone5 etc*/
 
-/* @media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
     /* reduce padding btn sections */
     /* reduce vertical white-space */
-    section {
-        padding: 20px 0;
+     section {
+    padding: 5px 0;
+ width: 98%;
+    margin-left:1%;
+}
+    
     }
-    .section-form {
-        /* add % of the parent container */
-        width: 90%;
-    }
-} */

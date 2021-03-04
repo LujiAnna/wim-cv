@@ -1,4 +1,6 @@
 /* Cross Browser TEsting: use Autoprefixer extension to Edit-Auto Prefix Selection*/
+
+
 /* ---------------------------------- */
 
 
@@ -8,12 +10,13 @@
 /* ---------------------------------- */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     background-color: #fff;
     color: #000;
     height: 100vh;
@@ -22,7 +25,7 @@ html, body {
     text-rendering: optimizeLegibility;
     /* remove horizontal scroll bar */
     overflow-x: hidden;
-    font-family: 'Roboto', 'Arial', sans-serif;
+    /*    font-family: 'Roboto', 'Arial', sans-serif;*/
 }
 
 
@@ -36,19 +39,15 @@ html, body {
 
 .row {
     display: flex;
-        max-width: 100%;
+    max-width: 100%;
     /* center the rows */
     margin: 0 auto;
 }
 
-.column {
-    flex: 50%;
-        padding: 20px 40px;
-
-}
-
+/*PROFILE*/
 section {
-    padding: 2%;
+    width: 70%;
+    margin-left:15%;
 }
 
 
@@ -66,6 +65,7 @@ section {
     visibility: hidden;
 }
 
+
 /* ---------------------------------- */
 
 
@@ -74,8 +74,45 @@ section {
 
 /* ---------------------------------- */
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    opacity: .9;
+border-bottom: 1px solid #eee;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 15px;
+/*border-bottom: 1px solid #eee;   */
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px 8px;
+    margin-right: 20px;
+   text-align: center;    
+}
+
+nav ul li a{
+    display: block;
+    color:#000;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 8px;;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+
 .banner {
-    background-image: url(egg_shell.png);
+    background-image: url(vintage-concrete.png);
     position: relative;
     height: 25vh;
 }
@@ -101,15 +138,20 @@ img {
     clear: both;
 }
 
+
 /* Top Grey Line */
+
 .title {
- border-bottom: 3px solid #eeeeee;
+    border-bottom: 3px solid #eeeeee;
 }
 
+
 /* Middle Grey Line */
+
 .right {
     border-left: 3px solid #eeeeee;
 }
+
 
 /* ---------------------------------- */
 
@@ -119,8 +161,11 @@ img {
 
 /* ---------------------------------- */
 
-h1, h2, h3 {
-        text-transform: uppercase;
+h1,
+h2,
+h4
+{
+    text-transform: uppercase;
 }
 
 h1 {
@@ -130,51 +175,58 @@ h1 {
     word-spacing: 4px;
     margin-bottom: 20px;
     letter-spacing: 1px;
-
 }
-h2, h3 {
+
+h2,
+h3,
+h4,
+h5 {
     color: #666;
 }
 
 h2 {
     font-weight: 300;
-    font-size: 180%;
+    font-size: 150%;
     word-spacing: 2px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
-h3 {
+h4 {
     font-weight: 400;
     font-size: 110%;
     margin-bottom: 15px;
-        margin-top: 20px;
-
+    margin-top: 15px;
 }
 
-h4, h5 {
-     font-weight: 400;
-}
+h3 {
+    margin-bottom: 5px;
+        padding: 10px;
 
-h4 {
-        margin-bottom: 10px;
 }
-
 
 h5 {
-        margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
+h6 {
+    margin-bottom: 5px;
+        font-size: 70%;
+}
+
+.profile h3 {
+    text-align: center;
+}
 
 /* PARAGRAPHS */
 
-p, ul li {
-        font-size: 80%;
+p,
+ul li {
+    font-size: 80%;
     /* line ht should be btn 120% and 145% */
     line-height: 145%;
     font-weight: 300;
-
 }
 
 ul li {
@@ -182,12 +234,12 @@ ul li {
 }
 
 ul li:last-child {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.contact ul {
-    list-style: none;
-    margin-left: -4%;
+.education {
+    margin-bottom: 25px;
 }
 
-/*style dates, html code for | & / */
+
+/*style dates, html code for | & / $ - */
